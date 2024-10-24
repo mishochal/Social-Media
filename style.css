@@ -259,3 +259,67 @@ body:has(.switch-checkbox:checked) {
 .header:has(.switch-checkbox:checked)~.body .card-content h3 {
     color: #feffff;
 }
+
+
+/* DIFFERENT SCREEN SIZES */
+
+@media screen and (max-width: 760px) {
+
+    .soc-media-cards {
+        flex-wrap: wrap;
+    }
+
+    .soc-media-card {
+        width: calc((100% - 25px) / 2);
+    }
+
+    .overview-cards {
+        grid-template-columns: repeat(2, calc((100% - 25px) / 2));
+    }
+
+}
+
+
+@media screen and (max-width: 520px) {
+
+    .header {
+        min-height: 220px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: normal;
+        width: 100%;
+    }
+
+    .header-desc {
+        padding-bottom: 20px;
+        border-bottom: solid 1px #252b43;
+    }
+
+    .header-desc h1 {
+        font-size: 22px;
+    }
+
+    .theme-switch-container {
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+
+    .body {
+        top: 180px;
+    }
+
+    .soc-media-cards {
+        flex-direction: column;
+    }
+
+    .soc-media-card {
+        width: 100%;
+    }
+
+    .overview-cards {
+        grid-template-columns: 100%;
+    }
+
+}
