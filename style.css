@@ -221,3 +221,41 @@ body {
 .card-content:hover {
     background-color: #e1e3f0;
 }
+
+/* DARK MODE */
+
+body:has(.switch-checkbox:checked) {
+    background-color: #1d2029;
+}
+
+.header:has(.switch-checkbox:checked) {
+    background-color: #20222f;
+}
+
+.header:has(.switch-checkbox:checked) .theme-switch-container p {
+    color: #feffff;
+}
+
+.header:has(.switch-checkbox:checked) .header-desc h1 {
+    color: #feffff;
+}
+
+.switch-checkbox:checked {
+    background-color: #363957;
+}
+
+.header:has(.switch-checkbox:checked)~.body .overview-header h2 {
+    color: #feffff;
+}
+
+.header:has(.switch-checkbox:checked)~.body .card-content {
+    background-color: #252b43;
+}
+
+.header:has(.switch-checkbox:checked)~.body .card-content:hover {
+    background-color: #333a56;
+}
+
+.header:has(.switch-checkbox:checked)~.body .card-content h3 {
+    color: #feffff;
+}
